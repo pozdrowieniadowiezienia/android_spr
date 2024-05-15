@@ -49,7 +49,7 @@ public class DetailedView extends AppCompatActivity {
         titleText.setText(book_details_split[0]);
         ImageView imageView = findViewById(R.id.imageView2);
         Random random = new Random();
-        int random_int = random.nextInt(7);
+        int random_int = random.nextInt(integerArrayList.size()-1);
         imageView.setImageResource(integerArrayList.get(random_int));
     }
 }
